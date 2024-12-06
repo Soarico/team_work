@@ -8,7 +8,7 @@ class Controller(
     val service: Service
 ) {
     @GetMapping("/plus")
-    fun plus(@RequestParam number: Long): Unit {
+    fun increase(@RequestParam number: Long): Unit {
         return service.increase(number)
     }
 }
