@@ -1,5 +1,6 @@
 package org.example.service
 
+
 import org.springframework.stereotype.Service
 import org.example.client.IncClient
 @Service

@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 import org.example.service.NumService
 
+
 @RestController
 class NumController(
     val service: NumService
