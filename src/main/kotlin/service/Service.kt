@@ -1,13 +1,12 @@
 package org.example.service
 
-import demo.application.client.IncClient
 import org.springframework.stereotype.Service
-
+import org.example.client.IncClient
 @Service
-class Service (
+class NumService (
     private val incClient: IncClient
 ){
-    fun increase(number: Long) {
+    fun increase(number: Long){
         incClient.increase(number + 1)
     }
 }
