@@ -1,4 +1,4 @@
-package org.example.service
+package demo.application.service
 
 import demo.application.client.IncClient
 import org.springframework.boot.autoconfigure.SpringBootApplication
