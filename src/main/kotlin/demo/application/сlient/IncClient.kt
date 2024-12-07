@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam
 
 @FeignClient(name = "incClient", url = "http://localhost:8080/")
 interface IncClient {
-    @RequestMapping(method = [RequestMethod.GET], value = ["number/{number}"])
+    @RequestMapping(method = [RequestMethod.GET], value = ["/increase"])
     @Headers("Content-Type: application/json")
     fun increase(@RequestParam("number") number: Long): Long
 }
