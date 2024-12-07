@@ -6,7 +6,7 @@ plugins {
 
 }
 
-group = "57project"
+group = "TeamWork"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -27,4 +27,14 @@ dependencies {
 
 kotlin {
     jvmToolchain(17)
+}
+
+docker {
+    springBootApplication{
+        baseImage.set("openjdk:17-alpine")
+    }
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
