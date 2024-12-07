@@ -4,7 +4,7 @@ import demo.application.client.IncClient
 import org.springframework.stereotype.Service
 
 @Service
-class Service (
+class IncService (
     private val incClient: IncClient
 ){
     fun increase(number: Long) {
